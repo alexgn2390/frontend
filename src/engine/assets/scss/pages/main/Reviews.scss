@@ -1,0 +1,250 @@
+.Reviews{
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+
+  @media (max-width: $content-mobile-max-width) {
+    margin-top: 30px;
+  }
+
+  .Reviews_Content{
+    padding: 0 20px;
+    width: 1740px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+
+    @media (max-width: 1800px) {
+      width: 100%;
+      padding: 0 40px;
+    }
+
+    @media (max-width: $content-mobile-min-width) {
+      padding: 0 15px;
+    }
+
+    .Reviews_Title{
+      color: var(--color-text-title);
+      font-family: ProximaNova Bold;
+      font-size: 64px;
+      line-height: 80px;
+      position: relative;
+
+      @media (max-width: $content-mobile-min-width) {
+        font-size: 42px;
+        line-height: 60px;
+      }
+
+      span{
+        color: var(--color-primary);
+      }
+    }
+
+    .Reviews_Wrapper{
+      gap: 60px;
+      display: flex;
+      flex-direction: row;
+      margin: 80px 0;
+
+      @media (max-width: $content-mobile-card-min-width) {
+        gap: 40px;
+        margin: 40px 0;
+        flex-direction: column;
+      }
+
+      .ReviewButton{
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        transition: .2s;
+        position: relative;
+        border-radius: 20px;
+        background-color: var(--color-block);
+
+        &:hover{
+          transition: 0s;
+          background-color: var(--color-block-hover);
+        }
+
+        img{
+          width: 38px;
+          height: 66px;
+        }
+
+        .ReviewNext{
+          transform: rotate(180deg);
+        }
+      }
+
+      .Card{
+        width: auto;
+        height: auto;
+        min-width: 360px;
+        min-height: 360px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        //border: 1px solid red;
+        border-radius: 40px;
+        background-color: var(--color-block-secondary);
+        padding: 35px;
+        position: relative;
+
+        @media (max-width: $content-mobile-min-width) {
+          min-width: 300px;
+          min-height: 300px;
+          min-width: unset;
+          min-height: unset;
+          padding: 15px;
+        }
+
+        @media (max-width: $content-mobile-min-width) {
+          width: 100%;
+        }
+
+        .CardHeader{
+          gap: 20px;
+          width: 100%;
+          display: flex;
+          margin-bottom: 45px;
+          position: relative;
+          align-items: center;
+
+          .Card_IconWrapper{
+            width: 80px;
+            height: 80px;
+            min-width: 80px;
+            min-height: 80px;
+            border-radius: 20px;
+            background-color: var(--color-block);
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .Card_Icon{
+              width: 60px;
+              height: 60px;
+            }
+          }
+
+          .Card_Title{
+            color: var(--color-text-title);
+            font-family: ProximaNova Bold;
+            font-size: 64px;
+            line-height: 80px;
+            position: relative;
+
+            @media (max-width: $content-mobile-max-width) {
+              font-size: 42px;
+              line-height: 60px;
+            }
+
+            @media (max-width: $content-mobile-middle-width) {
+              font-size: 32px;
+              line-height: 40px;
+            }
+
+            &.min{
+              width: min-content;
+            }
+          }
+
+          &::after{
+            content: "";
+            width: 100%;
+            height: 2px;
+            bottom: -25px;
+            position: absolute;
+            background-color: var(--color-primary);
+          }
+        }
+
+        .CardText{
+          color: var(--color-text);
+          font-family: ProximaNova Regular;
+          font-size: 32px;
+          line-height: 40px;
+          position: relative;
+
+          @media (max-width: $content-mobile-max-width) {
+            font-size: 25px;
+            line-height: 30px;
+          }
+        }
+      }
+    }
+
+    .Reviews_Pagination_Wrapper{
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      position: relative;
+      flex-wrap: nowrap;
+      white-space: nowrap;
+
+      .Reviews_Pagination{
+        width: 100%;
+        gap: 24px;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: center;
+        overflow-x: auto;
+        padding-bottom: 10px;
+
+        /* justify-content: center;
+          Don't use justify-content on the container!
+          Centring flexbox items using justify-content results in a quriky behaviour when the content overflows the container. Even after scrolling, some items may not be fully visible.
+        */
+
+        &::-webkit-scrollbar{
+          height: 5px;
+          min-height: 5px;
+          border-radius: 6px;
+          background-color: var(--color-scroll-background);
+        }
+
+        &::-webkit-scrollbar-thumb{
+          border-radius: 6px;
+          background-color: var(--color-scroll-bar);
+        }
+
+        .Pagination{
+          cursor: pointer;
+          float: left;
+          width: 24px;
+          height: 24px;
+          min-width: 24px;
+          min-height: 24px;
+          background-color: var(--color-pagination);
+          border-radius: 100%;
+          display: inline-flex;
+
+          &:first-child{
+            margin-left: auto;
+          }
+
+          &:last-child{
+            margin-right: auto;
+          }
+
+          &.selected{
+            width: 40px;
+            height: 40px;
+            min-width: 40px;
+            min-height: 40px;
+            background-color: transparent;
+            border: 10px solid var(--color-primary);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.B2B_Button{
+  cursor: pointer;
+  gap: 10px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  padding: 2px 40px;
+  border-radius: 50px;
+  background-color: #6EBE00;
+  user-select: none;
+  transition: .2s;
+
+  color: white;
+  font-family: ProximaNova SemiBold;
+  font-size: 20px;
+  line-height: 40px;
+  white-space: nowrap;
+
+  &:hover{
+    transition: 0s;
+    transform: scale(1.02);
+  }
+
+  &:active{
+    transition: 0s;
+    transform: scale(0.98);
+  }
+
+  @media (width <= $content-b2b-mobile-max-width){
+    padding: 16px 60px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.2;
+  }
+}

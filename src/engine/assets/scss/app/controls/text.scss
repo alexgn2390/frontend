@@ -1,0 +1,57 @@
+.text {
+  &_size_xl {
+    font-size: 28px;
+    line-height: 1.14;
+  }
+
+  &_size_lg {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  &_size_md {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  &_size_sm {
+    font-size: 16px;
+    line-height: 1.12;
+  }
+
+  &_theme_dark {
+    color: var(--color-dark);
+  }
+
+  &_theme_gray {
+    color: var(--color-gray)
+  }
+
+  &_theme_purple {
+    color: var(--color-purple)
+  }
+
+  &_theme_red {
+    color: var(--color-error-text)
+  }
+
+  &_theme_textgray {
+    color: var(--color-text-gray)
+  }
+
+  &_weight_normal {
+    font-weight: 400;
+  }
+
+  &_weight_medium {
+    font-weight: 500;
+  }
+
+  &_weight_semibold {
+    font-weight: 600;
+  }
+
+  &_font_secondary {
+    font-family: var(--secondary-font);
+  }
+}

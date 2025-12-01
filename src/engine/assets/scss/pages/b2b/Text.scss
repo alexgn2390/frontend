@@ -1,0 +1,86 @@
+.B2B_Text{
+  gap: 60px;
+  width: 100%;
+  padding-bottom: 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  background-color: white;
+  user-select: none;
+
+  @media (width <= $content-b2b-mobile-max-width){
+    height: fit-content;
+  }
+
+  .Head{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #BBB5FF;
+    padding: 60px 0;
+
+    @media (width <= $content-b2b-mobile-max-width){
+      padding: 40px 0;
+    }
+
+    text{
+      color: white;
+      font-family: "Lato", sans-serif;
+      font-weight: 700;
+      font-size: 80px;
+      line-height: 70px;
+
+      @media (width <= $content-b2b-mobile-max-width){
+        font-size: 36px;
+      }
+    }
+  }
+  
+  .Container{
+    gap: 10px;
+    width: 1020px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    @media (width <= $content-b2b-mobile-max-width){
+      width: 100%;
+      height: fit-content;
+      align-items: center;
+    }
+
+    .Content{
+      gap: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+
+      @media (width <= $content-b2b-mobile-max-width){
+        width: 500px;
+      }
+
+      @media (width <= $content-b2b-mobile-middle-width){
+        width: 320px;
+      }
+
+      text{
+        color: #404B52;
+        font-family: Lato Bold;
+        font-size: 36px;
+        line-height: 1.4;
+
+        @media (width <= $content-b2b-mobile-max-width){
+          font-size: 16px;
+          text-align: center;
+        }
+
+        @media (width <= $content-b2b-mobile-middle-width){
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

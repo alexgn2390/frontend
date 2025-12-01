@@ -1,0 +1,234 @@
+.home {
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 16px 0;
+  position: relative;
+  //height: calc(100vh - 88px);
+  min-height: calc(100vh - 88px);
+  padding-bottom: 105px;
+
+  &__container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    margin-bottom: 16px;
+  }
+
+  &__calendar {
+    margin-bottom: 24px;
+    min-height: 72px;
+  }
+
+  &__logo_wrap {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 32px;
+  }
+
+  &__logo {
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__natext {
+    margin: 15px 0;
+    text-align: center;
+  }
+
+  &__nalink {
+    display: block;
+    text-align: center;
+  }
+}
+
+
+.HomeSessions{
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.HomeSession{
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-radius: 15px;
+  aspect-ratio: 7/3;
+  user-select: none;
+
+  &.pointer{ cursor: pointer; }
+
+  &:hover{
+    .button{
+      transition: .0s;
+      transform: scale(1.01);
+    }
+  }
+
+  &:active{
+    .button{
+      transition: .0s;
+      transform: scale(.99);
+    }
+  }
+
+  &_background{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, #000000c4 0%, #00d4ff00 65%);
+  }
+
+  &_image{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    object-fit: cover
+  }
+
+  &_content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    color: white;
+    padding: 20px 24px;
+    justify-content: space-between;
+  }
+
+  .Info{
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+
+    .Title{
+      font-size: 24px;
+      line-height: 1;
+    }
+
+    text{
+      
+    }
+  }
+
+  .Footer{
+    gap: 5px;
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+
+    .Title{
+      font-size: 24px;
+      line-height: 1;
+    }
+
+    text{
+
+    }
+
+    .button{
+      display: inline-block;
+      background-image: linear-gradient(276.85deg, #9662F1 8.31%, #673AB7 96.27%);
+      border-radius: 16px;
+      text-transform: capitalize;
+      color: var(--color-white)!important;
+
+      padding: 4px 18px;
+      margin-top: auto;
+    }
+  }
+}
+
+.HomeCards{
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+
+  .Card{
+    cursor: pointer;
+    display: block;
+    border-radius: 16px;
+    padding: 14px 20px;
+    min-height: 84px;
+    color: var(--color-white)!important;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    &.warm_up{
+      background: linear-gradient(277deg, #ffd56a 0%, #f90 99.97%);
+    }
+
+    &.full_session{
+      background: linear-gradient(277deg, #9662f1 0%, #673ab7 99.97%);
+    }
+
+    &.quick_session{
+      background: linear-gradient(277deg, #f16262 0%, #b73a3a 99.97%);
+    }
+
+    &.stretching{
+      background: linear-gradient(277deg, #56c843 0%, #15811a 99.97%);
+    }
+
+    &:hover{
+
+      .Icon{
+        transition: .0s;
+        transform: scale(1.05);
+      }
+    }
+
+    &:active{
+
+      .Icon{
+        transition: .0s;
+        transform: scale(.95);
+      }
+    }
+
+    .Info{
+      gap: 8px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+
+      .Title{
+        font-family: "Poppins Bold", sans-serif;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 100%;
+        color: #fff;
+      }
+
+      .Text{
+        gap: 12px;
+        display: flex;
+        flex-direction: row;
+        font-family: "Poppins Medium", sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 100%;
+        color: #fff;
+      }
+    }
+
+    .Icon{
+      transition: .2s;
+    }
+  }
+}

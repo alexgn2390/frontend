@@ -1,0 +1,30 @@
+.form {
+  &__inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  &__error {
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    gap: 8px;
+  }
+
+  &__row {
+    display: flex;
+    gap: 8px;
+  }
+
+  &__checkbox {
+    margin-bottom: 16px;
+  }
+}

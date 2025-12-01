@@ -1,0 +1,160 @@
+.Guide{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 50px;
+
+  @media (max-width: $content-mobile-card-max-width) {
+    padding: 0 40px;
+    justify-content: flex-start;
+  }
+
+  @media (max-width: $content-mobile-min-width) {
+    padding: 0 15px;
+  }
+
+  @media (max-width: 1400px) {
+    height: auto;
+  }
+
+  .Guide_Background{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+  }
+
+  .Guide_Content{
+    width: 1190px;
+    height: 980px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+
+    @media (max-width: $content-mobile-card-max-width) {
+      height: auto;
+      width: 100%;
+      //align-items: center;
+    }
+
+    @media (max-width: 1300px) {
+      align-items: flex-start;
+    }
+
+    .Guide_Title{
+      margin-top: 50px;
+      color: var(--color-text-title);
+      font-family: ProximaNova Bold;
+      font-size: 64px;
+      line-height: 80px;
+      position: relative;
+
+      @media (max-width: $content-mobile-max-width) {
+        font-size: 52px;
+        line-height: 70px;
+      }
+
+      @media (max-width: $content-mobile-middle-width) {
+        font-size: 52px;
+        line-height: 60px;
+      }
+
+      span{
+        color: var(--color-primary);
+      }
+    }
+
+    .Guide_Body{
+      gap: 30px;
+      margin-top: 70px;
+      display: flex;
+      position: relative;
+      flex-direction: row;
+
+      @media (max-width: 1300px) {
+        gap: 0;
+      }
+
+      .Guide_Left{
+        gap: 40px;
+        width: 880px;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+
+        @media (max-width: $content-mobile-card-max-width) {
+          width: 100%;
+        }
+
+        .Guide_SubTitle{
+          color: var(--color-text-subtitle);
+          font-family: ProximaNova Bold;
+          font-size: 32px;
+          line-height: 40px;
+          position: relative;
+          margin-bottom: 10px;
+
+          span{
+            color: var(--color-primary);
+          }
+        }
+
+        .Guide_Text{
+          color: var(--color-text);
+          font-family: ProximaNova Regular;
+          font-size: 32px;
+          line-height: 40px;
+          position: relative;
+
+          span{
+            font-family: ProximaNova Bold;
+            color: var(--color-primary);
+          }
+        }
+
+        .Guide_Button{
+          margin-top: 10px;
+          cursor: pointer;
+          color: white;
+          background-color: var(--color-button-secondary);
+          padding: 20px 40px;
+          border-radius: 12px;
+          transition: .2s;
+          width: fit-content;
+          font-family: ProximaNova Bold;
+          font-size: 24px;
+          line-height: 40px;
+          user-select: none;
+
+          @media (max-width: $content-mobile-max-width) {
+            left: 0;
+            font-size: 20px;
+            width: 100%;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+          }
+
+          &:hover{
+            transition: 0s;
+            background-color: var(--color-button-secondary-hover);
+          }
+        }
+      }
+
+      .Guide_Right{
+        .Guide_Image{
+          width: 260px;
+          height: 600px;
+
+          @media (max-width: 1300px) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.nav {
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    width: 25%;
+    cursor: pointer;
+
+    &:hover{
+      .nav__link{
+        transition: .0s;
+      }
+    }
+
+    &:active{
+      .nav__link{
+        transition: .0s;
+        transform: scale(.95);
+      }
+    }
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    padding: 16px 0;
+    color: var(--color-text-gray);
+    transition: .2s;
+
+    &.router-link-exact-active {
+      color: var(--color-purple);
+
+      .nav__text {
+        font-weight: 500;
+      }
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+  }
+}

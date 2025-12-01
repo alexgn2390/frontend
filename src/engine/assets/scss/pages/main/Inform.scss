@@ -1,0 +1,203 @@
+.Inform{
+  width: 100%;
+  height: 1388px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: 60px 0;
+
+  @media (max-width: $content-mobile-card-max-width) {
+    padding: 0 40px;
+    margin: 40px 0;
+  }
+
+  @media (max-width: $content-mobile-card-min-width) {
+    height: auto;
+  }
+
+  @media (max-width: $content-mobile-min-width) {
+    padding: 15px;
+    margin: 10px 0;
+  }
+
+  .Inform_Background{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+  }
+
+  .Inform_Content{
+    width: 1190px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+
+    .Inform_SubTitle{
+      top: 40px;
+      left: 20px;
+      color: var(--color-text-title);
+      font-family: ProximaNova Bold;
+      font-size: 64px;
+      line-height: 80px;
+      position: absolute;
+
+      @media (max-width: $content-mobile-card-min-width) {
+        display: none;
+      }
+    }
+
+    .Inform_TitleMobile{
+      top: 0;
+      left: 0;
+      color: var(--color-text-title);
+      font-family: ProximaNova Bold;
+      font-size: 64px;
+      line-height: 80px;
+      position: relative;
+      display: none;
+
+      @media (max-width: $content-mobile-card-min-width) {
+        display: block;
+      }
+
+      @media (max-width: $content-mobile-max-width) {
+        font-size: 52px;
+        line-height: 70px;
+      }
+
+      @media (max-width: $content-mobile-middle-width) {
+        font-size: 52px;
+        line-height: 60px;
+      }
+
+      span{
+        color: var(--color-primary);
+      }
+    }
+
+    .Inform_Title{
+      top: 40px;
+      right: 80px;
+      color: var(--color-text-title);
+      font-family: ProximaNova Bold;
+      font-size: 64px;
+      line-height: 80px;
+      position: absolute;
+
+      @media (max-width: $content-mobile-card-min-width) {
+        display: none;
+      }
+
+      span{
+        color: var(--color-primary);
+      }
+    }
+
+    .Inform_Image{
+      width: 690px;
+      position: absolute;
+      top: 20px;
+      left: -70px;
+
+      @media (max-width: $content-mobile-card-min-width) {
+        display: none;
+      }
+    }
+
+    .Inform_Right{
+      gap: 40px;
+      top: 180px;
+      right: 60px;
+      width: 400px;
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+
+      @media (max-width: $content-mobile-card-min-width) {
+        top: 0;
+        right: 0;
+        width: 100%;
+        margin: 40px 0 0 0;
+        position: relative;
+      }
+    }
+
+    .Inform_Bottom{
+      gap: 40px;
+      top: 745px;
+      left: 280px;
+      width: 400px;
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+
+      @media (max-width: $content-mobile-card-min-width) {
+        top: 0;
+        left: 0;
+        width: 100%;
+        margin: 40px 0;
+        position: relative;
+      }
+    }
+
+    .Info{
+      gap: 8px;
+      display: flex;
+      flex-direction: column;
+
+      .Info_Title{
+        color: var(--color-primary);
+        font-family: ProximaNova Bold;
+        font-size: 32px;
+        line-height: 40px;
+      }
+
+      .Info_Text{
+        color: var(--color-text-title);
+        font-family: ProximaNova Regular;
+        font-size: 20px;
+        line-height: 32px;
+      }
+    }
+
+    .Inform_Button{
+      bottom: 0;
+      left: 20px;
+      cursor: pointer;
+      color: white;
+      background-color: var(--color-button-secondary);
+      padding: 20px 40px;
+      border-radius: 12px;
+      transition: .2s;
+      width: fit-content;
+      font-family: ProximaNova Bold;
+      font-size: 24px;
+      line-height: 40px;
+      position: absolute;
+      user-select: none;
+      text-align: center;
+
+      @media (max-width: $content-mobile-card-min-width) {
+        left: 0;
+        position: relative;
+      }
+
+      @media (max-width: $content-mobile-max-width) {
+        left: 0;
+        font-size: 20px;
+        width: calc(100% - 30px);
+        margin: 15px;
+        display: flex;
+        justify-content: center;
+      }
+
+      &:hover{
+        transition: 0s;
+        background-color: var(--color-button-secondary-hover);
+      }
+    }
+  }
+}

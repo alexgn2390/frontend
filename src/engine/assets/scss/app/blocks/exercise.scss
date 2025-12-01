@@ -1,0 +1,88 @@
+.ExChange{
+  flex: 1;
+  width: 100%;
+  padding: 0 16px;
+  max-width: 768px;
+  margin: 0 auto;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  user-select: none;
+  position: relative;
+
+  .Content{
+    gap: 60px;
+    max-width: 358px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    h1{
+      font-family: var(--font-family);
+      font-weight: 500;
+      font-size: 20px;
+      text-align: center;
+      color: #0a0615;
+    }
+
+    text{
+      padding: 0px 25px;
+    }
+
+    ul{
+      gap: 16px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+
+      li{
+        cursor: pointer;
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 16px;
+        color: var(--text);
+        position: relative;
+        padding-left: 30px;
+
+        &:after {
+          content: "";
+          top: 2px;
+          left: 0;
+          width: 20px;
+          height: 20px;
+          position: absolute;
+          border-radius: 100%;
+          border: 2px solid #7850bf;
+          transition: .2s;
+        }
+
+        &.active:before {
+          content: "";
+          top: 7px;
+          left: 5px;
+          width: 10px;
+          height: 10px;
+          position: absolute;
+          border-radius: 100%;
+          background-color: #7850bf;
+          transition: .2s;
+        }
+
+        &:hover{
+          &:after, &:before{
+            transform: scale(1.1);
+            transition: 0s;
+          }
+        }
+
+        &:active{
+          &:after, &:before{
+            transform: scale(0.9);
+            transition: 0s;
+          }
+        }
+      }
+    }
+  }
+}

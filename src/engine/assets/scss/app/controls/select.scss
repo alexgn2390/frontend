@@ -1,0 +1,129 @@
+.select {
+  position: relative;
+  cursor: pointer;
+
+  &_theme_gray {
+    line-height: 1.5;
+
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    color: var(--color-gray);
+
+    .select__value {
+      background: var(--color-light-gray);
+      border-radius: 8px 0px 0px 8px;
+    }
+
+    .select__options {
+      border: 1px solid var(--color-text-gray);
+      background: var(--color-white);
+      border-radius: 16px 0px 16px 16px;
+    }
+  }
+
+  &_theme_default {
+    line-height: 1.5;
+
+    font-family: var(--secondary-font);
+    font-weight: 600;
+    color: var(--color-gray);
+
+    .select__value {
+      background: var(--color-white);
+      border: 1px solid #DAE0E8;
+      border-radius: 8px;
+    }
+
+    .select__options {
+      border: 1px solid #DAE0E8;
+      background: var(--color-white);
+      border-radius: 8px;
+    }
+
+    .select__option {
+      padding: 9px 16px;
+      position: relative;
+
+      &:not(:last-child) {
+        &::after {
+          content: '';
+          position: absolute;
+          height: 1px;
+          bottom: -1px;
+          left: 15px;
+          right: 15px;
+          background-color: #DAE0E8;
+        }
+      }
+    }
+  }
+
+  &_is_active {
+    .select__icon {
+      transform: rotate(180deg);
+    }
+  }
+
+  &_size_sm {
+    width: 75px;
+    flex-shrink: 0;
+  }
+
+  &_size_full {
+    width: 100%;
+  }
+
+  &__value {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 12px 28px 12px 20px;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 14px;
+    right: 6px;
+    color: var(--color-gray);
+    pointer-events: none;
+    transition-property: transform;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+  }
+
+  &__options {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  &__option {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 24px;
+
+    &_is_active {
+      background-image: var(--gradient-theme);
+      color: var(--color-white);
+    }
+  }
+
+  &__text {
+    // max-width: 75%;
+    // white-space: nowrap;
+    // overflow: hidden;
+    // text-overflow: ellipsis;
+  }
+
+  &__subtext {
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}

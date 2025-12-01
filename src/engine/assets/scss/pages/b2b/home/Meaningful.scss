@@ -1,0 +1,92 @@
+.B2B_HomeMeaningful{
+  width: 100%;
+  height: 604px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background: linear-gradient(43.23deg, #E2EBF4 25.28%, #F8FBFF 86.24%);
+
+  @media (width <= $content-b2b-mobile-max-width){
+    height: fit-content;
+    padding-top: 40px;
+  }
+  
+  .Container{
+    gap: 10px;
+    width: 1020px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    user-select: none;
+
+    @media (width <= $content-b2b-mobile-max-width){
+      width: 100%;
+    }
+
+    .Content{
+      gap: 10px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+
+      @media (width <= $content-b2b-mobile-max-width){
+        width: 100%;
+      }
+
+      .Wrapper{
+        height: 100%;
+        width: 1020px;
+        max-width: 1020px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+
+        @media (width <= $content-b2b-mobile-max-width){
+          gap: 25px;
+          width: 100%;
+          flex-direction: column;
+        }
+
+        text{
+          color: var(--color-text);
+          font-family: Lato Bold;
+          font-size: 80px;
+          line-height: 70px;
+          white-space: nowrap;
+
+          @media (width <= $content-b2b-mobile-max-width){
+            width: 100%;
+            font-size: 42px;
+            line-height: 1.4;
+            text-align: center;
+            white-space: unset;
+            padding: 0 20px;
+          }
+
+          @media (width <= $content-b2b-mobile-middle-width){
+            font-size: 36px;
+            line-height: 1.4;
+          }
+        }
+  
+        img{
+          bottom: 0;
+          right: -150px;
+          width: 890px;
+          height: 657px;
+          position: absolute;
+
+          @media (width <= $content-b2b-mobile-max-width){
+            right: unset;
+            width: 464px;
+            height: 332px;
+            position: relative;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+@import "./variables/Fonts.scss";
+
+
+/* General */
+@import "./components/general/Main.scss";
+@import "./components/general/ScrollBar.scss";
+@import "./components/general/Container.scss";
+@import "./components/general/Animations.scss";
+@import "./components/general/Header.scss";
+@import "./components/general/Footer.scss";
+
+
+/* Blocks */
+@import "./components/blocks/IPanel.scss";
+@import "./components/blocks/ErrorCard.scss";
+
+
+/* Effects */
+@import "./components/effects/Wave.scss";
+@import "./components/effects/ShimmerEffect.scss";
+
+
+/* Controls */
+@import "./components/controls/Buttons.scss";
+@import "./components/controls/CheckBox.scss";
+@import "./components/controls/Switcher.scss";
+@import "./components/controls/MultiSelect.scss";
+
+
+/* Pages */
+@import "./pages/B2B.scss";
+@import "./pages/Main.scss";
+@import "./pages/GetApp.scss";
+@import "./pages/Loading.scss";
+@import "./pages/Registration.scss";

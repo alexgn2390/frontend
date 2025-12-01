@@ -1,0 +1,131 @@
+.B2B_HomeTop{
+  width: 100%;
+  height: 645px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background: linear-gradient(43.23deg, #E2EBF4 25.28%, #F8FBFF 86.24%);
+
+  @media (width <= $content-b2b-mobile-max-width){
+    height: fit-content;
+  }
+  
+  .Container{
+    gap: 10px;
+    width: 1020px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    user-select: none;
+
+    @media (width <= $content-b2b-mobile-max-width){
+      width: 100%;
+    }
+
+    .Content{
+      gap: 10px;
+      display: flex;
+      flex-direction: row;
+
+      @media (width <= $content-b2b-mobile-max-width){
+        width: 100%;
+        justify-content: center;
+      }
+
+      .Wrapper{
+        display: flex;
+        flex-direction: row;
+        padding-top: 136px;
+
+        @media (width <= $content-b2b-mobile-max-width){
+          gap: 26px;
+          width: 100%;
+          flex-direction: column;
+          align-items: center;
+          padding-top: 40px;
+        }
+
+        .Left{
+          gap: 60px;
+          display: flex;
+          flex-direction: column;
+
+          @media (width <= $content-b2b-mobile-max-width){
+            gap: 36px;
+            width: 100%;
+            align-items: center;
+          }
+
+          .Title{
+            color: #404b52;
+            font-family: Lato Bold;
+            font-size: 80px;
+            line-height: 70px;
+            white-space: nowrap;
+
+            @media (width <= $content-b2b-mobile-max-width){
+              width: clamp(150px, 90%, 420px);
+              font-weight: 700;
+              font-size: 36px;
+              line-height: 1.2;
+
+              display: flex;
+              flex-direction: column;
+              
+              span{
+                text-align: end;
+              }
+            }
+
+            @media (width <= $content-b2b-mobile-middle-width){
+              width: clamp(150px, 90%, 324px);
+              font-size: 36px;
+              line-height: 1.2;
+            }
+          }
+  
+          text{
+            width: 442px;
+            color: #404b52;
+            font-family: "Lato Bold", sans-serif;
+            font-size: 20px;
+            line-height: 32px;
+
+            @media (width <= $content-b2b-mobile-max-width){
+              width: clamp(150px, 90%, 450px);
+              padding: 0 10px;
+              font-weight: 600;
+              font-size: 16px;
+              line-height: 1.2;
+              text-align: center;
+            }
+
+            @media (width <= $content-b2b-mobile-middle-width){
+              width: clamp(150px, 90%, 320px);
+              padding: 0 10px;
+              font-size: 14px;
+            }
+          }
+        }
+
+        img{
+          bottom: 0;
+          right: -100px;
+          width: 666px;
+          height: 570px;
+          position: absolute;
+
+          @media (width <= $content-b2b-mobile-max-width){
+            right: 0;
+            position: relative;
+          }
+
+          @media (width <= $content-b2b-mobile-middle-width){
+            width: 342px;
+            height: 318px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.awards {
+  background-color: #FFFFFF;
+  box-shadow: 0px 5px 10px rgba(234, 240, 246, 0.601465);
+  border-radius: 16px;
+  padding: 30px 10px;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__text {
+    margin-bottom: 8px;
+  }
+
+  &__item {
+    width: 50%;
+    text-align: center;
+    margin-bottom: 32px;
+
+    @media screen and (min-width: 390px) {
+      width: 33%;
+    }
+  }
+}

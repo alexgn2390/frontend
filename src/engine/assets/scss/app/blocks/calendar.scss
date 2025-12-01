@@ -1,0 +1,46 @@
+.calendar {
+  display: flex;
+  padding-bottom: 24px;
+  overflow: hidden;
+  overflow-x: auto;
+  gap: 8px;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 48px;
+    height: 48px;
+    position: relative;
+    flex-shrink: 0;
+    background-image: linear-gradient(76.64deg, rgba(120, 108, 255, 0.165) 8.2%, rgba(90, 200, 250, 0.132) 101.38%);
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 1.3;
+    color: #192126;
+    font-weight: 600;
+
+    &_is_inactive {
+      opacity: 0.8;
+      background-image: linear-gradient(76.64deg, rgb(173 173 173 / 50%) 8.2%, rgb(185 185 185 / 13%) 101.38%);
+    }
+
+    &_is_active {
+      background-image: var(--gradient-theme);
+      color: var(--color-white);
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -16px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 8px;
+        height: 9px;
+        border-radius: 50%;
+        background-image: var(--gradient-theme);
+      }
+    }
+  }
+}

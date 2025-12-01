@@ -1,0 +1,73 @@
+// AI Coach Card Styles
+.Card.ai_coach {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  position: relative;
+  overflow: hidden;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+    animation: shimmer 3s infinite;
+  }
+  
+  .Info {
+    .Title {
+      color: white;
+      font-weight: 600;
+    }
+    
+    .Text {
+      color: rgba(255, 255, 255, 0.9);
+      
+      span {
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 12px;
+      }
+    }
+  }
+  
+  .Icon {
+    background: rgba(255, 255, 255, 0.2);
+    
+    svg {
+      fill: white;
+    }
+  }
+  
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+// Update existing card styles to ensure consistency
+.HomeCards {
+  .Card {
+    transition: all 0.3s ease;
+    cursor: pointer;
+    
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+}
+
+
+
+
+
+

@@ -1,0 +1,306 @@
+.B2B_TopHeader{
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #776bff80;
+  user-select: none;
+
+  @media (width <= $content-b2b-mobile-max-width){
+    height: 20px;
+  }
+
+  .Container{
+    gap: 10px;
+    width: 1020px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    @media (width <= $content-b2b-mobile-max-width){
+      display: none;
+    }
+
+    .Content{
+      gap: 10px;
+      display: flex;
+      flex-direction: row;
+      position: relative;
+
+      .Left{
+        flex-grow: 1;
+        display: flex;
+        flex-direction: row;
+      }
+
+      .Right{
+        gap: 30px;
+        display: flex;
+        flex-direction: row;
+
+        .Button{
+          cursor: pointer;
+          gap: 10px;
+          display: flex;
+          align-items: center;
+          padding: 8px 32px;
+          border-radius: 50px;
+          background-color: white;
+          user-select: none;
+          transition: .2s;
+
+          &:hover{
+            transition: 0s;
+            transform: scale(1.02);
+          }
+
+          &:active{
+            transition: 0s;
+            transform: scale(0.98);
+          }
+
+          .icon{
+            width: 18px;
+            height: 18px;
+            background-image: url('/engine/assets/img/b2b/1/icons/login.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-left: -16px;
+          }
+
+          text{
+            color: #404b52;
+            font-family: ProximaNova SemiBold;
+            font-size: 16px;
+            line-height: 20px;
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+  }
+}
+
+.B2B_Header{
+  width: 100%;
+  height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: var(--color-header);
+  user-select: none;
+
+  @media (width <= $content-b2b-mobile-max-width){
+    padding: 12px 80px;
+    height: 68px;
+  }
+  
+  .Container{
+    gap: 10px;
+    width: 1020px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    .Content{
+      gap: 10px;
+      display: flex;
+      flex-direction: row;
+      position: relative;
+
+      .Logo{
+        gap: 16px;
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+
+        img{
+          width: 230px;
+          height: 56px;
+          transition: .2s;
+
+          &:hover{
+            transition: 0s;
+            transform: scale(1.01);
+          }
+
+          &:active{
+            transition: 0s;
+            transform: scale(0.99);
+          }
+
+          @media (width <= $content-b2b-mobile-max-width){
+            width: 165px;
+            height: 40px;
+          }
+        }
+
+        .Text{
+          color: #404b52;
+          font-family: ProximaNova SemiBold;
+          font-size: 20px;
+          line-height: 40px;
+          white-space: nowrap;
+
+          @media (width <= $content-b2b-mobile-max-width){
+            position: absolute;
+            left: 46px;
+            bottom: 0;
+            line-height: 1.2;
+
+            font-family: "Lato SemiBold", sans-serif;
+            font-weight: 600;
+            font-size: 10px;
+          }
+        }
+      }
+
+      .Nav{
+        gap: 40px;
+        display: flex;
+        align-items: center;
+        
+        .NavLink{
+          cursor: pointer;
+          color: #404b52;
+          font-family: ProximaNova SemiBold;
+          font-size: 20px;
+          line-height: 40px;
+          white-space: nowrap;
+          transition: .2s;
+
+          &:hover{
+            transition: 0s;
+            transform: scale(1.02);
+          }
+
+          &:active{
+            transition: 0s;
+            transform: scale(0.98);
+          }
+
+          &.active, &.router-link-active{
+            border-bottom: 1px solid green;
+          }
+        }
+      }
+
+      .NavMenuButton{
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .2s;
+
+        &:hover{
+          transition: 0s;
+          transform: scale(1.03);
+        }
+
+        &:active{
+          transition: 0s;
+          transform: scale(0.97);
+        }
+      }
+    }
+  }
+}
+
+
+
+.MobileMenu{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #404b5260;
+  position: fixed;
+  user-select: none;
+  z-index: 1000;
+  opacity: 0;
+  backdrop-filter: blur(4px);
+  transform: translateX(100%);
+
+  &.active{
+    opacity: 1;
+    transform: translateX(0);
+
+    .NavMobile{
+      transform: translateX(0);
+    }
+  }
+
+  .NavMobile{
+    top: 0;
+    right: 0;
+    gap: 12px;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px 0 0 20px;
+    transition: .2s;
+    transform: translateX(250px);
+    position: absolute;
+
+    .NavHeader{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      text{
+        font-family: Lato Bold;
+        font-size: 14px;
+        padding-bottom: 2px;
+        border-bottom: 1px solid gray;
+      }
+
+      img{
+        cursor: pointer;
+        width: 14px;
+        height: 14px;
+        transition: 2s;
+
+        &:hover{
+          transition: 0s;
+          transform: scale(1.1);
+        }
+
+        &:active{
+          transition: 0s;
+          transform: scale(.9);
+        }
+      }
+    }
+
+    .NavMenu{
+      padding: 0 24px;
+      display: flex;
+      flex-direction: column;
+
+      .NavButton{
+        cursor: pointer;
+        color: #404b52;
+        text-align: center;
+        padding: 20px 16px;
+        border-bottom: 1px solid var(--color-primary);
+
+        &:hover{
+          color: #404b52;
+          transition: 0s;
+          transform: scale(1.01);
+        }
+
+        &:active{
+          transition: 0s;
+          transform: scale(.99);
+        }
+      }
+    }
+  }
+}

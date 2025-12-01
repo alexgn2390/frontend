@@ -1,0 +1,51 @@
+.check {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  text-align: left;
+  cursor: pointer;
+
+  &__native {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+
+    &:focus~.check__box {
+      border: 2px solid var(--color-purple);
+    }
+
+    &:checked~.check__box {
+      border: 2px solid var(--color-purple);
+
+      &::after {
+        display: block;
+      }
+    }
+  }
+
+  &__box {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: var(--color-white);
+    border: 2px solid #E5E9EF;
+    flex-shrink: 0;
+    border-radius: 50%;
+    position: relative;
+
+    &::after {
+      content: '';
+      display: none;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: var(--color-purple);
+    }
+  }
+}

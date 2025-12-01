@@ -1,0 +1,207 @@
+.B2B_HomeWhat{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  user-select: none;
+
+  @media (width <= $content-b2b-mobile-max-width){
+    height: fit-content;
+    padding-top: 40px;
+  }
+
+  > .Head{
+    width: 100%;
+    height: 236px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    user-select: none;
+    background: #BBB5FF;
+
+    @media (width <= $content-b2b-mobile-max-width){
+      height: 124px;
+    }
+
+    text{
+      color: white;
+      font-family: Lato Bold;
+      font-size: 80px;
+      line-height: 36px;
+      white-space: nowrap;
+
+      @media (width <= $content-b2b-mobile-max-width){
+        font-size: 36px;
+        text-align: center;
+        line-height: 1.4;
+      }
+    }
+  }
+  
+  .Container{
+    gap: 50px;
+    width: 1020px;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    padding: 80px 0 60px 0;
+    position: relative;
+
+    @media (width <= $content-b2b-mobile-max-width){
+      gap: 40px;
+      width: 100%;
+      padding: 0 0 40px 0;
+      align-items: center;
+    }
+
+    .Content{
+      gap: 280px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+
+      @media (width <= $content-b2b-mobile-max-width){
+        gap: 24px;
+      }
+
+      @media (width <= $content-b2b-mobile-max-width){
+        align-items: center;
+      }
+
+      .Row{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+
+        @media (width <= $content-b2b-mobile-max-width){
+          flex-direction: column;
+          align-items: center;
+        }
+
+        &.r1{
+          justify-content: flex-end;
+
+          img{
+            top: -200px;
+            left: -400px;
+            width: 1280px;
+            height: 890px;
+
+            @media (width <= $content-b2b-mobile-max-width){
+              top: -40px;
+              left: calc(50% - 180px);
+              width: 426px;
+              height: 298px;
+              margin-bottom: -40px;
+            }
+          }
+
+          .Column{
+            width: 508px;
+
+            @media (width <= $content-b2b-mobile-max-width){
+              width: 100%;
+              max-width: 320px;
+            }
+          }
+        }
+
+        &.r2{
+          justify-content: flex-start;
+
+          @media (width <= $content-b2b-mobile-max-width){
+            flex-direction: column-reverse;
+            align-items: center;
+          }
+
+          img{
+            top: -210px;
+            left: 510px;
+            width: 598px;
+            height: 612px;
+
+            @media (width <= $content-b2b-mobile-max-width){
+              top: unset;
+              left: unset;
+              width: 290px;
+              height: 310px;
+              margin-bottom: 24px;
+            }
+          }
+
+          .Column{
+            width: 452px;
+
+            @media (width <= $content-b2b-mobile-max-width){
+              width: 100%;
+              max-width: 320px;
+            }
+          }
+        }
+
+        img{
+          position: absolute;
+
+          @media (width <= $content-b2b-mobile-max-width){
+            position: relative;
+          }
+        }
+
+        .Column{
+          gap: 40px;
+          display: flex;
+          flex-direction: column;
+
+          @media (width <= $content-b2b-mobile-max-width){
+            gap: 24px;
+          }
+
+          .Title{
+            color: var(--color-primary);
+            font-family: Lato Bold;
+            font-size: 36px;
+            line-height: 40px;
+            white-space: nowrap;
+
+            @media (width <= $content-b2b-mobile-max-width){
+              font-size: 36px;
+              text-align: center;
+              line-height: 1.4;
+              white-space: unset;
+            }
+          }
+
+          .Text{
+            color: var(--color-text);
+            font-family: Lato Light;
+            font-size: 20px;
+            line-height: 30px;
+
+            @media (width <= $content-b2b-mobile-max-width){
+              font-size: 14px;
+              text-align: center;
+              line-height: 1.4;
+            }
+
+            span{
+              color: var(--color-primary);
+              font-family: Lato Bold;
+              font-size: 24px;
+              line-height: 32px;
+
+              @media (width <= $content-b2b-mobile-max-width){
+                font-size: 14px;
+                text-align: center;
+                line-height: 1.4;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

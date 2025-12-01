@@ -1,0 +1,311 @@
+{
+	"language": {
+		"name": "English",
+		"code": "en",
+		"countries": ["US"],
+		"switch_to": "Switch to English",
+		"lang_switch": "Switch the language"
+	},
+	"header": {
+		"titles": {
+			"undefined": "nFitnity",
+			"not_found": "Page not found",
+			"server_error": "Server not available",
+			"session_error": "Session not available",
+			"site_error": "Error",
+			"site_search": "Site page",
+
+			"p_main": "nFitnity",
+			"p_get": "Get Application",
+			"p_reg": "nFitnity - Registration",
+			"p_get_app": "nFitnity - Get App",
+			"p_b2b": "nFitnity | AI Personal Trainer for 55+",
+			"p_b2b_health": "nFitnity | AI Personal Trainer for 55+"
+		},
+		"descriptions": {
+			"server_error": "It is impossible to process the request, most likely we have servers. Please try again later.",
+			"session_error": "Invalid access key. Please try again later."
+		},
+    "menus": {
+      "main": "Main",
+      "app": "Application"
+    }
+	},
+	"general": {
+		"account": "Account",
+		"profile": "Profile",
+		"my_profile": "My profile",
+		"page": "Page",
+		"my_page": "My Page",
+		"billing": "Billing",
+		"settings": "Settings",
+		"edit": "Edit",
+		"password": "Password",
+		"email": "Email",
+		"more": "More",
+		"login": "Login",
+		"phone": "Phone number",
+		"help": "Help",
+		"help_me": "Help me",
+		"search": "Search",
+		"notify": "Notify",
+		"close": "Close",
+		"exit": "Exit",
+		"quit": "Quit",
+		"back": "Back",
+		"proceed": "Proceed",
+		"code": "Code",
+		"menu": "Menu",
+		"or": "or",
+		"tag": "Tag",
+		"save": "Save",
+		"activate": "Activate",
+		"publish": "Publish",
+		"lock": "Lock",
+		"confirm": "Confirm",
+		"loading": "Loading",
+		"more_details": "More details",
+		"control": "Control",
+		"download": "Download",
+		"download_now": "Download Now",
+    "accept": "Agree",
+    "refusal": "Refusal",
+    "allow": "Allow",
+		"disallow": "Disallow",
+		"collabse_all": "Collabse all",
+		"on_this_page": "On this page",
+		"messages": {
+			"enter_text": "Enter text",
+			"could_not_find": "We could not find what you were looking for.",
+			"page_could_not_be_found": "Sorry, the page you were looking for could not be found.",
+			"page_temporarily_unavailable": "It may be temporarily unavailable, relocated, or no longer exists.",
+			"subject_to_errors_and_search": "Check the entered URL for errors and try again. Alternatively, use the website search",
+			"use_the_site_search": "Use the website search",
+			"create_ozaccount": "Create a single account for all services right now!",
+			"login_or_signup": "Login or register",
+      "inform_load": "Information is loading",
+      "please_wait": "Please wait",
+			"notify_on": "Notifications enabled!",
+			"goto_on_site": "Go to the website {0}",
+			"gdpr": "We use cookies to improve the site and its user experience.",
+      "gdpr_allow": "Thank you!",
+      "gdpr_disallow": "You have denied us the use of cookies and we will not use them. Third party counters will continue to use cookies, unfortunately this is required."
+		}
+	},
+  "pages": {
+    "main": {
+      "personal_trainer": "AI Personal Trainer for {0}+",
+      "title": "Confused about gym routines? <span>Simplify with nFitnity’s</span> expert guidance!",
+      "info_1": "Craft your personal workout plan in just<br> 5 minutes with nFitnity! Master every move with our step-by-step text and video guides.",
+      "info_2": "Embrace a smarter way to stay fit. Save up to 100 times on your fitness expenses compared to average personal trainer costs",
+      "info_3": "Start your risk-free journey today with our 14-day money-back guarantee. Transform your fitness experience now!",
+      "btn_kickstart": "Start My Free Week Today!",
+      "full_name": "Full Name:",
+      "phone_number": "Phone Number:",
+      "email_address": "Email Address:",
+      "btn_sign_up": "Start For Free",
+      "cards": {
+        "instruction_title": "Text Instructions",
+        "instruction_text": "Comprehensive and easy-to-follow text instructions for each exercise, ensuring clarity and understanding, suitable for all fitness levels.",
+        "video_title": "Video Guides",
+        "video_text": "Engaging and instructional videos accompanying each exercise, demonstrating proper techniques to maximize effectiveness and minimize injury risks.",
+        "library_title": "Extensive Exercise Library",
+        "library_text": "A rich database with a wide variety of exercises, catering to different fitness goals and preferences, suitable for all ages and abilities.",
+        "tracking_title": "Progress Tracking",
+        "tracking_text": "An intuitive feature to monitor your fitness journey, track progress, and celebrate milestones, keeping you motivated and on track.",
+        "plan_title": "Personalized Workout Plans",
+        "plan_text": "Customizable workout programs tailored to individual goals, fitness levels, and health considerations, ensuring a personalized fitness journey.",
+        "design_title": "Senior-Friendly Interface Design",
+        "design_text": "An intuitively designed interface that caters to the ergonomic and visual needs of older adults, ensuring ease of use without compromising sophistication."
+      },
+      "app_title": "Create <span>Your</span> Program",
+      "app_text": "Create your workout program effortlessly in just 5 minutes. It’s sooooo simple, anyone can do it! Money-back guarantee. Risk-free!",
+      "app_button": "Unlock My Free Trial Now!",
+      "guide_title": "<span>How to Create</span> Your Workout Program?",
+      "guide_text": "A Friendly Step-by-Step Guide",
+      "guide_1": "<span>1. Register:</span> Let’s Get Acquainted before we start",
+      "guide_2": "<span>2. Answer a few questions:</span> Share a bit about yourself and your fitness goals so we can tailor your journey.",
+      "guide_3": "<span>3. Schedule Your Sessions:</span> Pick the days and times that fit seamlessly into your life.",
+      "guide_4": "<span>4. Await the Magic:</span> Sit back and watch as our advanced AI weaves together the perfect workout plan for you, like magic!",
+      "guide_5": "<span>5. Ready to Roll! Everything’s set:</span> Your personalized fitness plan awaits. Let’s embark on this health journey together!",
+      "guide_button": "Activate My Free 7-Day Plan!",
+      "advantages": {
+        "solution_title": "Cost-Effective Solution",
+        "solution_text": "nFitnity offers all the benefits of a personal trainer at a fraction of the cost, making fitness accessible and affordable",
+        "intensity_title": "Customizable Duration and Intensity",
+        "intensity_text": "Tailor your workout program’s length and intensity to match your personal fitness level and goals, ensuring a comfortable yet challenging experience",
+        "approach_title": "Health-Focused Approach",
+        "approach_text": "Each workout is designed not just for physical fitness but also to enhance overall health, particularly catering to the needs of senior users"
+      },
+      "as_seen": "As seen in…",
+      "review_title": "Customer Reviews",
+      "inform_health": "Health",
+      "inform_title": "<span>Benefits</span> of nFitnity",
+      "informs": {
+        "title_1": "Combatting Bone Density Loss:",
+        "text_1": "nFitnity’s resistance training is key in maintaining and improving bone density, crucial for seniors to prevent osteoporosis and related injuries.",
+        "title_2": "Increasing Muscle Strength:",
+        "text_2": "nFitnity’s resistance training is key in maintaining and improving bone density, crucial for seniors to prevent osteoporosis and related injuries.",
+        "title_3": "Enhancing Mobility:",
+        "text_3": "By focusing on exercises that improve joint flexibility and balance, nFitnity helps users move more freely and swiftly, contributing to better quality of life and independence.",
+        "title_4": "Improvement in Movement Speed:",
+        "text_4": "Research demonstrates that high-intensity resistance training approach can significantly enhance movement speed. In a study with elderly participants, just 8 weeks of training led to a 174% increase in muscle strength and a notable 48% boost in walking speed, greatly improving mobility and agility.",
+        "title_5": "Decreasing Mortality Rates:",
+        "text_5": "Addressing the concern that 5% of deaths are due to insufficient physical activity, nFitnity encourages a more active lifestyle to reduce this risk.",
+        "title_6": "Reducing Cancer and Disease Risks:",
+        "text_6": "Regular exercise with nFitnity combats the risks linked to physical inactivity, which accounts for 20% of fatal illnesses, including some types of cancer."
+      },
+      "inform_button": "Discover My Free Week of Wellness!"
+    },
+    "reg": {
+      "title": "Get Your One-Week <br>Training Program for FREE!",
+      "info_1": "Personalized Programs",
+      "info_2": "Safe Exercises",
+      "info_3": "Video Guides",
+      "info_4": "Text Instructions",
+      "submit": "Submit"
+    },
+    "get": {
+      "title": "In order to continue, please download the app",
+      "text": "Your write-offs and estimated savings are waiting for you in the Keeper app!",
+      "button": "Download the app"
+    }
+  },
+  "app": {
+    "general": {
+      "email": "Email",
+      "pass": "Password",
+      "name": "Full Name",
+      "phone": "Phone Number",
+      "loader": "We are creating your personal training plan"
+    },
+    "welcome": {
+      "title": "Welcome to nFitnity",
+      "text": "nFitnity has workouts on demand that you can find based on how much time you have",
+      "button": "Get Started"
+    },
+    "settings": {
+      "title": "Settings",
+      "edit": "Edit",
+      "save": "Save",
+      "age_group": "Age Group",
+      "fitness_goal": "Fitness Goal",
+      "training_type": "Training Type",
+      "": "",
+      "": "",
+      "": "",
+      "": "",
+      "": "",
+      "": "",
+      "": "",
+      "": "",
+      "": "",
+      "": "",
+      "": ""
+    },
+    "reg": {
+      "state0_title": "Create Your Passcode",
+      "state1_title": "Confirm Your Passcode",
+      "enter_code": "Enter your passcode",
+      "errors": {
+        "accept_privacy": "Please accept the privacy policy",
+        "user_reg": "User registration error"
+      }
+    },
+    "login": {
+      "state0_title": "Sign In",
+      "state1_title": "Security screen",
+      "enter_code": "Enter your passcode",
+      "forgot_password": "Forgot Password?",
+      "dont_have_acc": "Don't have an account?",
+      "do_have_acc": "Do you have an account?",
+      "sign_up": "Sign Up",
+      "sign_in": "Sign In",
+      "name_required": "Name is required",
+      "email_required": "Email is required",
+      "pass_required": "Password is required",
+      "phone_required": "Phone is required",
+      "enter_email": "Enter email",
+      "enter_name": "Enter full name",
+      "enter_pass": "Enter password",
+      "phone_enter": "Enter phone number",
+      "confirm_pass": "Confrim password",
+      "email": "Email",
+      "pass": "Password",
+      "pass2": "Confirm Password",
+      "name": "Full Name",
+      "phone": "Phone Number",
+      "pass_have": "Password must have at least 4 symbols.",
+      "email_have": "Invalid email address. Please enter a valid email.",
+      "next": "Next",
+      "pass_not_match": "Passwords do not match",
+      "field_is_required": "Field is required",
+      "accept_privacy": "Accept privacy",
+      "privacy_policy": "By continuing you accept our Privacy Policy",
+      "": "",
+      "": "",
+      "": ""
+    },
+    "forgot": {
+      "title": "Forgot password",
+      "email_text": "Please enter your email address.",
+      "code_text": "A code has been sent to your email.",
+      "pass_text": "We will send you a link to reset your password.",
+      "btn_next": "Send Code",
+      "enter_code": "Enter code",
+      "code": "Code",
+      "resend": "Resend",
+      "loader": "You have restored your account",
+      "errors": {
+        "invalid_email": "You have entered an incorrect email",
+        "invalid_code": "You have entered an incorrect code",
+        "invalid_pass": "You have entered an incorrect password",
+        "send_delay": "The code can be sent in {0} seconds"
+      }
+    },
+    "profile": {
+      "title": "Account Information",
+      "btn_logout": "LogOut",
+      "btn_edit": "Edit",
+      "edit": {
+        "title": "Account Information",
+        "btn_save": "Save"
+      }
+    },
+    "guide": {
+      "title": "Guide",
+      "read": "read"
+    },
+    "logs": {
+      "title": "Log",
+      "stat": "Statistic"
+    },
+    "session": {
+      "title": "Session",
+      "stretching": "Stretching",
+      "minutes": "{0} min",
+      "session_done": "Session Done",
+      "quick_home": "Quick Home session",
+      "complete": "Congratulations, tasks completed",
+      "mark_done": "Task completed!",
+      "errors": {
+        "get": "Failed to get schedules",
+        "session": "The request failed",
+        "generate": "Error generating schedules",
+        "mark_done": "Failed to mark completed",
+        "instruction": "Error getting instruction"
+      }
+    }
+  },
+  "settings": {
+    "theme": "Theme",
+    "themes": ["Light", "Dark", "Systemic"]
+	},
+	"errors": {
+		"unknown_error": "Unknown error",
+    "unknown": "Something went wrong",
+		"format_error": "This format is not supported",
+		"access_error": "Access Denied",
+		"no_access": "No access"
+	}
+}

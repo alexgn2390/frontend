@@ -1,0 +1,21 @@
+/*
+  Error, Warning, Info panels
+*/
+.ipanel{
+  background-color: var(--color-block-border);
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 13px;
+  color: var(--color-text);
+  @media (max-width: $content-mobile-max-width), (max-height: $content-mobile-max-height) {
+    margin: 5px;
+  }
+}
+.ipanel.warning{ background-color: var(--color-warning); color: white; }
+.ipanel.success{ background-color: var(--color-success); color: white; }
+.ipanel.error{ background-color: var(--color-error); color: white; }
+.ipanel.info{ background-color: var(--color-info); color: white; }
+.ipanel.primary{ background-color: var(--color-primary); color: white!important; }
+.ipanel.primary2{ background-color: var(--color-button-primary); color: white; }
+.ipanel.primary3{ background-color: var(--color-button-primary-hover); color: white; }
+.ipanel.secondary{ background-color: var(--color-secondary); color: white; }

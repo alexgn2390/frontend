@@ -1,0 +1,297 @@
+.B2B_HomeTrust{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 80px 0;
+
+  @media (width <= $content-b2b-mobile-max-width){
+    height: fit-content;
+    padding: 40px 0 60px 0;
+  }
+  
+  .Container{
+    gap: 10px;
+    width: 1020px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    @media (width <= $content-b2b-mobile-max-width){
+      width: 100%;
+    }
+
+    .Content{
+      gap: 80px;
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      user-select: none;
+
+      @media (width <= $content-b2b-mobile-max-width){
+        gap: 40px;
+        padding: 0 80px;
+        flex-direction: column-reverse;
+        align-items: center;
+      }
+
+      .Left{
+        width: 295px;
+        height: 640px;
+        min-width: 295px;
+        min-height: 640px;
+        overflow: hidden;
+        border-radius: 10px;
+        position: relative;
+
+        .Splash{
+          cursor: pointer;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: .2s;
+          position: absolute;
+          z-index: 2;
+          
+          &:not(.stop){
+            background-color: #00000017;
+            backdrop-filter: blur(2px);
+
+            i{
+              opacity: .5;
+            }
+          }
+
+          &:hover, &.processing_load, &.processing_start{
+            transition: 0s;
+            background-color: #00000036;
+            backdrop-filter: blur(4px);
+
+            .ImageSplash{
+              transition: 0s;
+              background-color: #0000001e;
+              backdrop-filter: blur(2px);
+            }
+
+            i{
+              opacity: 1;
+            }
+          }
+
+          &.processing_load{
+            i{
+              animation: rotating 1s linear infinite;
+            }
+          }
+
+          &.processing_start{
+            transition: .3s;
+            opacity: 0;
+
+            .ImageSplash{
+              transition: .3s;
+              opacity: 0;
+            }
+
+            i{
+              transform: scale(100);
+              transition: .3s;
+            }
+          }
+
+          i{
+            color: white;
+            font-size: 60px;
+            opacity: 0;
+            transition: .2s;
+            z-index: 1;
+          }
+
+          .Image{
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-image: url('/engine/assets/img/b2b/1/video_back.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+
+          .ImageSplash{
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            transition: .2s;
+          }
+
+
+          .Visual{
+            top: calc(50% - 50px);
+            left: calc(50% - 50px);
+            width: 100px;
+            aspect-ratio: 1;
+            position: absolute;
+            border-radius: 100%;
+            border: 1px solid #ffffffa1;
+            animation: pulse2 3s infinite;
+          }
+        }
+
+        video{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .Right{
+        gap: 56px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        flex-grow: 1;
+
+        @media (width <= $content-b2b-mobile-max-width){
+          gap: 40px;
+          align-items: center;
+        }
+
+        .Title{
+          color: var(--color-text);
+          font-family: Lato Bold;
+          font-size: 36px;
+          line-height: 40px;
+          white-space: nowrap;
+        }
+
+        .Cards{
+          gap: 80px;
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+          justify-content: flex-start;
+          padding: 40px 0;
+
+          @media (width <= $content-b2b-mobile-max-width){
+            padding: 0;
+            justify-content: center;
+          }
+
+          @media (width <= calc($content-b2b-mobile-middle-width - 20px)){
+            gap: 40px;
+          }
+          
+          .i1{
+            width: 135px;
+            height: 120px;
+
+            @media (width <= $content-b2b-mobile-middle-width){
+              width: 90px;
+              height: 80px;
+            }
+          }
+          
+          .i2{
+            width: 104px;
+            height: 120px;
+
+            @media (width <= $content-b2b-mobile-middle-width){
+              width: 70px;
+              height: 80px;
+            }
+          }
+          
+          .i3{
+            width: 120px;
+            height: 120px;
+
+            @media (width <= $content-b2b-mobile-middle-width){
+              width: 80px;
+              height: 80px;
+            }
+          }
+          
+          .i4{
+            width: 318px;
+            height: 120px;
+
+            @media (width <= $content-b2b-mobile-middle-width){
+              width: 212px;
+              height: 80px;
+            }
+          }
+          
+          .i5{
+            width: 185px;
+            height: 120px;
+
+            @media (width <= $content-b2b-mobile-max-width){
+              display: none;
+            }
+          }
+        }
+
+        .Text{
+          color: var(--color-text);
+          font-family: Lato Medium;
+          font-size: 20px;
+          line-height: 32px;
+          white-space: nowrap;
+
+          @media (width <= $content-b2b-mobile-max-width){
+            text-align: center;
+            font-family: Lato Bold;
+            font-size: 14px;
+            line-height: 1.2;
+            font-weight: 500;
+          }
+        }
+
+        .separator{
+          left: -96px;
+          bottom: 14px;
+          height: 1px;
+          width: 408px;
+          position: absolute;
+          background-color: #A2D55C;
+          z-index: 3;
+
+          &::after{
+            content: "";
+            top: -6px;
+            left: -6px;
+            width: 12px;
+            height: 12px;
+            position: absolute;
+            background-color: #A2D55C;
+            border-radius: 100%;
+          }
+
+          &::before{
+            content: "";
+            top: -20px;
+            left: -20px;
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            border: 1px solid #a3d55ca1;
+            border-radius: 100%;
+            animation: pulse2 2.5s 1s infinite;
+          }
+
+          @media (width <= $content-b2b-mobile-max-width){
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

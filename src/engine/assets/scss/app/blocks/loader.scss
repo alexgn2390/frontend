@@ -1,0 +1,56 @@
+.loader {
+  background-image: linear-gradient(76.64deg, rgba(120, 108, 255, 0.15) 8.2%, rgba(90, 200, 250, 0.12) 101.38%);
+  justify-content: center;
+
+  &__title {
+    max-width: 245px;
+    margin: 0 auto 50px;
+    text-align: center;
+  }
+
+  &__circle {
+    width: 100%;
+    position: relative;
+
+    &-icon {
+      width: 300px;
+      height: 300px;
+      margin: 0 auto;
+      transform: rotate(-90deg);
+
+      circle {
+        width: 264px;
+        height: 264px;
+        fill: none;
+        transform: translate(18px, 18px);
+        stroke-width: 24;
+        stroke: #000;
+        stroke-dasharray: 830;
+        stroke-dashoffset: 830;
+        stroke-linecap: round;
+
+        &:nth-child(1) {
+          stroke-dashoffset: 0;
+          stroke: #F8FAFC;
+        }
+
+        &:nth-child(2) {
+          stroke-dashoffset: calc(830 - (830 * var(--percent)) / 100);
+          stroke: var(--color-purple);
+        }
+      }
+    }
+
+    &-text {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 46px;
+      line-height: 1;
+      text-align: center;
+      color: var(--color-dark);
+      font-weight: 600;
+    }
+  }
+}

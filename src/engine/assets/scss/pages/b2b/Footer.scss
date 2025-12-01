@@ -1,0 +1,156 @@
+.B2B_Footer{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #1C1E1A;
+  padding-bottom: 120px;
+
+  @media (width <= $content-b2b-mobile-max-width){
+    padding: 0 80px 80px 80px;
+  }
+
+  .WhiteLine{
+    width: 100%;
+    height: 40px;
+    margin-top: -1px;
+    background-color: white;
+
+    @media (width <= $content-b2b-mobile-max-width){
+      display: none;
+    }
+  }
+
+  img{
+    width: 456px;
+    height: 160px;
+    margin-top: -2px;
+
+    @media (width <= $content-b2b-mobile-max-width){
+      width: 388px;
+      height: 148px;
+    }
+
+    @media (width <= $content-b2b-mobile-middle-width){
+      width: 229px;
+      height: 88px;
+    }
+  }
+  
+  .Container{
+    gap: 80px;
+    width: 1020px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    @media (width <= $content-b2b-mobile-max-width){
+      width: 100%;
+      align-items: center;
+    }
+
+    @media (width <= $content-b2b-mobile-max-width){
+      gap: 40px;
+    }
+
+    .Content{
+      gap: 120px;
+      display: flex;
+      flex-direction: row;
+
+      @media (width <= $content-b2b-mobile-max-width){
+        width: 500px;
+      }
+
+      @media (width <= $content-b2b-mobile-middle-width){
+        width: 320px;
+      }
+
+      .Socials{
+        gap: 40px;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+
+        .Social{
+          cursor: pointer;
+          width: 80px;
+          height: 80px;
+          min-width: 80px;
+          min-height: 80px;
+          transition: .2s;
+  
+          &:hover{
+            transition: 0s;
+            transform: scale(1.02);
+          }
+  
+          &:active{
+            transition: 0s;
+            transform: scale(0.98);
+          }
+  
+          @media (max-width: $content-mobile-middle-width) {
+            width: 40px;
+            height: 40px;
+            min-width: 40px;
+            min-height: 40px;
+          }
+        }
+      }
+
+      .Info{
+        gap: 4px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        @media (width <= $content-b2b-mobile-max-width){
+          gap: 12px;
+        }
+
+        &.contacts{
+          top: 40px;
+          left: 560px;
+          position: absolute;
+        }
+
+        .InfoText{
+          gap: 24px;
+          display: flex;
+
+          color: white;
+          font-family: ProximaNova SemiBold;
+          font-size: 32px;
+          line-height: 40px;
+          user-select: unset;
+
+          @media (width <= $content-b2b-mobile-max-width){
+            font-size: 20px;
+            line-height: 1.2;
+          }
+
+          @media (width <= $content-b2b-mobile-middle-width){
+            font-size: 14px;
+          }
+
+          i{
+            
+          }
+
+          img{
+            width: 32px;
+            height: 32px;
+            
+            @media (width <= $content-b2b-mobile-middle-width){
+              width: 24px;
+              height: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

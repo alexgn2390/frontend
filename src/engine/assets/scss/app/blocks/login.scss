@@ -1,0 +1,211 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  min-height: 100vh;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  @supports (min-height: 100dvh) {
+    min-height: 100dvh;
+  }
+
+  &_type_default {
+    padding-top: 150px;
+    padding-bottom: 32px;
+  }
+
+  &_type_center {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: center;
+  }
+
+  &__text {
+    margin-bottom: 16px;
+    transition: .2s;
+  }
+
+  &__head {
+    text-align: center;
+    margin-bottom: 28px;
+  }
+
+  &__form {
+    margin-bottom: 16px;
+
+    &-code {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__footer {
+    text-align: center;
+    padding-top: 24px;
+
+    &-text {
+      margin-bottom: 32px;
+    }
+
+    &-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 52px;
+    font-size: 0;
+  }
+
+  &__forgot {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 48px;
+
+    &-text {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+    }
+  }
+
+  &__back {
+    position: absolute;
+    left: 16px;
+    top: 16px;
+    z-index: 1;
+  }
+
+  &__code {
+    margin-bottom: 32px;
+  }
+}
+
+.CodeContainer{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: space-between;
+
+  .CodeHeader{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+  }
+
+  .CodeContent{
+    margin-top: 20px;
+    gap: 30px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    
+    .CodeTitle{
+      color: var(--color-text-title);
+      font-family: Poppins;
+      font-size: 28px;
+      line-height: 32px;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .CodePanel{
+      gap: 20px;
+      display: flex;
+      flex-direction: column;
+
+      .CodePanel_Text{
+        color: var(--color-text-title);
+        font-family: Poppins;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 500;
+        text-align: center;
+      }
+
+      .CodePanel_Elipses{
+        display: flex;
+        justify-content: space-between;
+
+        &.error .CodeElipse{
+          animation: shake2 0.2s ease-in-out 0s 2;
+          background-color: var(--color-elipse-error);
+        }
+
+        .CodeElipse{
+          width: 12px;
+          height: 12px;
+          min-width: 12px;
+          min-height: 12px;
+          border-radius: 100%;
+          background-color: var(--color-elipse);
+          
+          &.active{
+            background-color: var(--color-elipse-primary);
+          }
+        }
+      }
+    }
+  }
+
+  .Buttons{
+    gap: 32px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 15px 60px;
+
+    .Buttons_Line{
+      gap: 32px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      .Button{
+        cursor: pointer;
+        width: 80px;
+        aspect-ratio: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+        background: linear-gradient(90deg, #E9E7FF 0%, #E9F6FF 97.94%);
+        font-size: 40px;
+        color: #404B52;
+        transition: .03s;
+        user-select: none;
+
+        &.hidden{
+          background: transparent;
+        }
+
+        &:active{
+          transform: scale(0.95);
+        }
+
+        @media (max-width: 330px) {
+          font-size: 20px;
+        }
+
+        @media (max-width: 230px) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

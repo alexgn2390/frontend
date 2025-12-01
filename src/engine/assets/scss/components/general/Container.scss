@@ -1,0 +1,13 @@
+.PageContainer{
+  gap: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+
+  &.nogap{ gap: 0; }
+
+  @media (max-width: $content-mobile-max-width) {
+
+	}
+}

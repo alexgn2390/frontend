@@ -1,0 +1,39 @@
+.label {
+  display: block;
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  border-radius: 8px;
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  border: 1px solid transparent;
+  transition-property: border, color, background-color;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+  outline: none;
+
+  &:focus {
+    border: 1px solid var(--color-purple);
+  }
+
+  &_theme_default {
+    background-color: var(--color-light-gray);
+    color: var(--color-gray);
+  }
+
+  &_theme_error {
+    background-color: var(--color-error-bg);
+  }
+
+  &_size_md {
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 12px 25px;
+  }
+
+  &_border_half {
+    border-radius: 0 8px 8px 0;
+  }
+}

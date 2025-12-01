@@ -1,0 +1,181 @@
+.Registration{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-background);
+  user-select: none;
+}
+
+.RegistrationContent{
+  width: 375px;
+  height: fit-content;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  padding: 0 30px 10px 30px;
+  background-color: var(--color-block);
+  border: 1px solid var(--color-input-border);
+  border-radius: 8px;
+  margin: auto;
+
+  @media (max-width: 430px) or (max-height: 580px){
+    border: 0;
+  }
+
+  @media (max-width: 375px){
+    width: 100%;
+    padding: 0px 15px;
+  }
+
+  .RC_Header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+
+    .HeaderLogo{
+      width: 100%;
+      height: 52px;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .RC_Body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .Title{
+      width: 100%;
+      color: var(--color-primary);
+      font-family: ProximaNova Bold;
+      font-size: 24px;
+      line-height: 36px;
+      font-weight: 700;
+      text-align: center;
+      padding-bottom: 10px;
+
+      @media (max-width: 320px){
+        font-size: 18px;
+        line-height: 30px;
+      }
+    }
+
+    .Info{
+      gap: 5px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      padding: 15px 0;
+      justify-content: space-between;
+
+      .InfoLeft, .InfoRight{
+        gap: 15px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+      }
+      
+      .InfoCard{
+        gap: 10px;
+        width: fit-content;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .InfoCard_Icon{
+          width: 40px;
+          height: 40px;
+          min-width: 40px;
+          min-height: 40px;
+        }
+
+        .InfoCard_Text{
+          color: var(--color-text-title);
+          font-family: ProximaNova SemiBold;
+          font-size: 14px;
+          line-height: 20px;
+          font-weight: 600;
+          white-space: normal;
+          word-spacing: 100px;
+          width: min-content;
+
+          @media (max-width: 300px){
+            font-size: 12px;
+            line-height: 18px;
+          }
+        }
+      }
+    }
+
+    .Frame{
+      gap: 15px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 15px 0;
+
+      .Frame_Input{
+        font-family: ProximaNova SemiBold;
+        font-size: 14px;
+        display: block;
+        outline: none;
+        transition: .2s;
+        border: 1px solid var(--color-input-border);
+        color: var(--color-input-text);
+        margin: 0;
+        background-color: var(--color-input);
+        width: 100%;
+        padding: 8px 12px;
+        border-radius: 8px;
+
+        &:hover{
+          transition: 0s;
+          background-color: var(--color-input-hover);
+        }
+
+        &:focus{
+          border-color: var(--color-primary);
+        }
+
+        &.error{
+          border-color: var(--color-error);
+        }
+      }
+
+      .Frame_Button{
+        margin-top: 5px;
+        text-align: center;
+
+        cursor: pointer;
+        font-family: ProximaNova SemiBold;
+        font-size: 16px;
+        line-height: 1.2;
+        display: block;
+        outline: none;
+        transition: .2s;
+        border-style: unset;
+        color: #fff;
+        height: 35px;
+        margin: 0;
+        background-color: var(--color-button-primary);
+        border-radius: 6px;
+        padding: 8px 12px;
+        width: 100%;
+        user-select: none;
+
+        &:hover{
+          background-color: var(--color-button-primary-hover);
+        }
+      }
+    }
+  }
+}

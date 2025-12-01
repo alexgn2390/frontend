@@ -1,0 +1,44 @@
+.ErrorCard{
+  top: 0;
+  left: 0;
+  gap: 15px;
+  height: 100%;
+  width: 100%;
+  padding: 15px;
+  position: absolute;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--color-block);
+}
+.ErrorCard_content{
+  gap: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  user-select: none;
+}
+.ErrorCard_title{
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color-text);
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  line-height: 1.462;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+.ErrorCard_message{
+  font-size: 13px;
+  font-weight: 400;
+  text-align: center;
+  color: var(--color-text);
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  line-height: 1.462;
+  overflow: hidden;
+  word-wrap: break-word;
+}

@@ -1,0 +1,243 @@
+.B2B_HomeFeaturest{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+
+  @media (width <= $content-b2b-mobile-max-width){
+    height: fit-content;
+  }
+
+  > .Head{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    user-select: none;
+    background: linear-gradient(76.64deg, rgba(226, 235, 244, 0.33) 8.2%, rgba(90, 200, 250, 0.132) 101.38%);
+
+    text{
+      color: var(--color-text);
+      font-family: Lato Bold;
+      font-size: 36px;
+      line-height: 70px;
+      text-align: center;
+      padding: 0 20px;
+
+      @media (width <= $content-b2b-mobile-max-width){
+        line-height: 1.4;
+      }
+    }
+  }
+  
+  .Container{
+    gap: 10px;
+    width: 1020px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    @media (width <= $content-b2b-mobile-max-width){
+      width: 100%;
+    }
+
+    .Content{
+      gap: 10px;
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      padding: 80px 0;
+      user-select: none;
+
+      @media (width <= $content-b2b-mobile-max-width){
+        width: 100%;
+      }
+
+      .Cards{
+        gap: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        position: relative;
+
+        @media (width <= $content-b2b-mobile-max-width){
+          width: 100%;
+          padding: 0 15px;
+          flex-wrap: nowrap;
+          flex-direction: column;
+          align-items: center;
+        }
+        
+        .Card{
+          gap: 12px;
+          display: flex;
+          flex-direction: column;
+          padding: 40px;
+          border-radius: 20px;
+          background-color: #786cff0d;
+          position: relative;
+
+          @media (width <= $content-b2b-mobile-middle-width){
+            width: 320px;
+            padding: 20px;
+            align-items: center;
+          }
+
+          @media (width <= 360px){
+            width: 100%;
+          }
+
+          .Head{
+            gap: 10px;
+            display: flex;
+            flex-direction: row;
+            position: relative;
+
+            img{
+              width: 60px;
+              height: 60px;
+            }
+          }
+
+          .Title{
+            width: 340px;
+            color: var(--color-primary);
+            font-family: Lato Bold;
+            font-size: 24px;
+
+            @media (width <= $content-b2b-mobile-middle-width){
+              width: 100%;
+              font-size: 20px;
+              text-align: center;
+            }
+          }
+
+          .Text{
+            width: 340px;
+            color: var(--color-text);
+            font-family: Lato Light;
+            font-size: 16px;
+            line-height: 24px;
+
+            @media (width <= $content-b2b-mobile-middle-width){
+              width: 100%;
+              font-size: 14px;
+              text-align: center;
+            }
+          }
+
+          .Footer{
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            align-items: center;
+
+            img{
+              width: 60px;
+              height: 60px;
+
+              @media (width <= $content-b2b-mobile-middle-width){
+                width: 45px;
+                height: 45px;
+              }
+
+              @media (width <= $content-b2b-mobile-min-width){
+                width: 40px;
+                height: 40px;
+              }
+            }
+
+            .Price{
+              margin-left: 8px;
+              color: var(--color-primary);
+              font-family: Lato Bold;
+              font-size: 36px;
+
+              @media (width <= $content-b2b-mobile-min-width){
+                font-size: 26px;
+              }
+            }
+
+            .PriceText{
+              top: 12px;
+              left: 152px;
+              width: 192px;
+              color: var(--color-primary);
+              font-family: Lato Bold;
+              font-size: 16px;
+              line-height: 1.2;
+              position: absolute;
+
+              @media (width <= $content-b2b-mobile-middle-width){
+                top: 0;
+                left: 0;
+                width: fit-content;
+                margin-left: 10px;
+                position: relative;
+                font-size: 14px;
+              }
+
+              @media (width <= $content-b2b-mobile-min-width){
+                font-size: 12px;
+              }
+            }
+          }
+
+          .Button{
+            cursor: pointer;
+            gap: 10px;
+            width: 210px;
+            margin-top: 4px;
+            display: flex;
+            align-items: center;
+            padding: 2px 40px;
+            border-radius: 50px;
+            background-color: white;
+            border: 1px solid gray;
+            user-select: none;
+            overflow: hidden;
+            transition: .2s;
+
+            color: var(--color-text);
+            font-family: ProximaNova SemiBold;
+            font-size: 20px;
+            line-height: 40px;
+            white-space: nowrap;
+
+            &:hover{
+              transition: 0s;
+              transform: scale(1.02);
+
+              i{
+                transform: translateX(8px);
+                transition: .4s;
+              }
+            }
+
+            &:active{
+              transition: 0s;
+              transform: scale(0.98);
+
+              i{
+                transform: translateX(54px);
+                transition: .2s;
+              }
+            }
+
+            i{
+              margin-left: 4px;
+              line-height: 1.2;
+              transition: .2s;
+            }
+          }
+        }
+      }
+    }
+  }
+}

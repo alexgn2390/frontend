@@ -1,0 +1,63 @@
+.Header{
+  width: 100%;
+  height: 190px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  @media (max-width: $content-mobile-card-max-width) {
+    padding: 0 40px;
+  }
+
+  @media (max-width: $content-mobile-min-width) {
+    padding: 0 15px;
+  }
+
+  @media (max-width: $content-mobile-middle-width) {
+    height: 120px;
+  }
+
+  .HeaderContent{
+    width: 1170px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    @media (max-width: $content-mobile-card-max-width) {
+      width: 100%;
+    }
+
+    @media (max-width: $content-mobile-min-width) {
+      justify-content: center;
+    }
+
+    .HeaderLogo{
+      width: 500px;
+      height: 120px;
+
+      @media (max-width: $content-mobile-middle-width) {
+        width: 250px;
+        height: 60px;
+      }
+    }
+
+    .HeaderInfo{
+      gap: 2px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+
+      @media (max-width: 1000px) {
+        display: none;
+      }
+
+      .HeaderInfo_Text{
+        color: var(--color-header-text);
+        font-family: ProximaNova SemiBold;
+        font-size: 32px;
+        line-height: 40px;
+      }
+    }
+  }
+}

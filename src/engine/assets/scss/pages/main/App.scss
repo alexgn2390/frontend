@@ -1,0 +1,162 @@
+.App{
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 90px;
+
+  @media (max-width: $content-mobile-card-max-width) {
+    padding: 0 40px;
+    justify-content: flex-start;
+  }
+
+  @media (max-width: $content-mobile-min-width) {
+    padding: 0 15px;
+  }
+
+  @media (max-width: 1400px) {
+    height: auto;
+  }
+
+  .App_Content{
+    width: 1320px;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+
+    @media (max-width: $content-mobile-card-max-width) {
+      width: 100%;
+      justify-content: center;
+    }
+
+    @media (max-width: 1050px) {
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    .App_Circle{
+      width: 88px;
+      height: 88px;
+      top: 10px;
+      left: -35px;
+      position: absolute;
+
+      @media (max-width: $content-mobile-card-max-width) {
+        left: 0;
+      }
+
+      @media (max-width: 1300px) {
+        display: none;
+      }
+    }
+
+    .App_CircleBig{
+      width: 540px;
+      height: 540px;
+      top: 54px;
+      left: 0px;
+      z-index: -1;
+      position: absolute;
+
+      @media (max-width: 1300px) {
+        top: 0;
+        left: -300px;
+      }
+    }
+
+    .App_Left{
+      margin-left: 100px;
+      display: flex;
+      justify-content: center;
+
+      @media (max-width: 1050px) {
+        margin-left: 0;
+      }
+
+      .App_Image{
+        width: 260px;
+        height: 530px;
+      }
+    }
+
+    .App_Right{
+      width: 652px;
+      margin-left: 130px;
+
+      @media (max-width: 1300px) {
+        width: 100%;
+      }
+
+      @media (max-width: 1050px) {
+        margin-top: 60px;
+        margin-left: 0;
+      }
+
+      .App_Title{
+        color: var(--color-text-title);
+        font-family: ProximaNova Bold;
+        font-size: 64px;
+        line-height: 80px;
+        position: relative;
+
+        @media (max-width: $content-mobile-max-width) {
+          font-size: 52px;
+          line-height: 70px;
+        }
+
+        @media (max-width: $content-mobile-middle-width) {
+          font-size: 52px;
+          line-height: 60px;
+        }
+
+        span{
+          color: var(--color-primary);
+        }
+      }
+
+      .App_Text{
+        width: 440px;
+        margin-top: 70px;
+        color: var(--color-text-title);
+        font-family: ProximaNova SemiBold;
+        font-size: 32px;
+        line-height: 40px;
+        position: relative;
+
+        @media (max-width: 540px) {
+          width: 100%;
+        }
+      }
+
+      .App_Button{
+        margin-top: 70px;
+        cursor: pointer;
+        color: white;
+        background-color: var(--color-button-secondary);
+        padding: 20px 40px;
+        border-radius: 12px;
+        transition: .2s;
+        width: fit-content;
+        font-family: ProximaNova Bold;
+        font-size: 24px;
+        line-height: 40px;
+        user-select: none;
+
+        @media (max-width: $content-mobile-max-width) {
+          left: 0;
+          margin-top: 40px;
+          font-size: 20px;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+        }
+
+        &:hover{
+          transition: 0s;
+          background-color: var(--color-button-secondary-hover);
+        }
+      }
+    }
+  }
+}

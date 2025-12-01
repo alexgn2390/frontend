@@ -1,0 +1,89 @@
+{
+  "name": "nfitnity-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@capacitor/android": "^5.0.5",
+    "@capacitor/browser": "^5.0.3",
+    "@capacitor/camera": "^5.0.4",
+    "@capacitor/cli": "^5.0.5",
+    "@capacitor/clipboard": "^5.0.4",
+    "@capacitor/core": "^5.0.5",
+    "@capacitor/device": "^5.0.4",
+    "@capacitor/filesystem": "^5.0.4",
+    "@capacitor/geolocation": "^5.0.4",
+    "@capacitor/local-notifications": "^5.0.4",
+    "@capacitor/network": "^5.0.4",
+    "@capacitor/push-notifications": "^5.0.4",
+    "@capacitor/screen-orientation": "^5.0.4",
+    "@capacitor/share": "^5.0.4",
+    "@capacitor/status-bar": "^5.0.4",
+    "@capacitor/toast": "^5.0.4",
+    "@highlightjs/vue-plugin": "^2.1.0",
+    "@vue/babel-preset-app": "^5.0.1",
+    "@vue/cli-service": "^5.0.1",
+    "@vue/component-compiler-utils": "^3.3.0",
+    "@vue/reactivity": "^3.2.31",
+    "@vueform/multiselect": "^2.6.2",
+    "@vuepic/vue-datepicker": "^6.0.2",
+    "axios": "^0.26.0",
+    "crypto-js": "^4.1.1",
+    "cyrillic-to-translit-js": "^3.1.0",
+    "jquery": "^3.6.0",
+    "mitt": "^3.0.0",
+    "postcss": "^8.4.7",
+    "register-service-worker": "^1.7.2",
+    "sass": "^1.49.9",
+    "sass-loader": "^12.6.0",
+    "swiper": "^6.8.1",
+    "uuid": "^8.3.2",
+    "vue": "^3.2.31",
+    "vue-axios": "^3.4.1",
+    "vue-i18n": "^9.1.9",
+    "vue-loader": "^17.0.0",
+    "vue-mobile-detection": "^2.0.1",
+    "vue-router": "^4.0.13",
+    "vue-scrollto": "^2.20.0",
+    "vue-tippy": "^6.0.0-alpha.54",
+    "vue3-colorpicker": "^2.0.4",
+    "vue3-marquee": "^4.0.0",
+    "vue3-slider": "^1.9.0",
+    "vue3-toastify": "^0.1.14"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.17.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@vue/cli-plugin-babel": "^5.0.1",
+    "@vue/cli-plugin-eslint": "^5.0.1",
+    "@vue/cli-plugin-pwa": "^5.0.1",
+    "@vue/compiler-sfc": "^3.2.31",
+    "eslint": "^8.10.0",
+    "eslint-plugin-vue": "^8.5.0",
+    "vue-eslint-parser": "^8.3.0",
+    "webpack": "^5.70.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "@babel/eslint-parser"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 2%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

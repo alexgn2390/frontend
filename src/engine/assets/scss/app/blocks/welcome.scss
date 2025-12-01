@@ -1,0 +1,39 @@
+.welcome {
+  min-height: 100vh;
+  max-width: 768px;
+  margin: 0 auto;
+
+  @supports (min-height: 100dvh) {
+    min-height: 100dvh;
+  }
+
+  background-image: linear-gradient(76.64deg, rgba(120, 108, 255, 0.5) 8.2%, rgba(90, 200, 250, 0.4) 101.38%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__logo {
+    padding: 78px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+  }
+
+  &__content {
+    width: 100%;
+    padding: 96px 16px 76px;
+    background-color: #F8FAFC;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+  }
+
+  &__text {
+    margin-bottom: 65px;
+  }
+}
